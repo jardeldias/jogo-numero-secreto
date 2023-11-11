@@ -1,5 +1,5 @@
 let listaNumerosSorteados = [];
-let limiteNumeros = 10;
+let limiteNumeros = 100;
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
 //-------------------------------------------
@@ -43,6 +43,7 @@ function gerarNumeroAleatorio(){
         console.log(listaNumerosSorteados);
         return numeroEscolhido;
     }
+    //console.log(numeroEscolhido);
 }
 
 function limparCampo(){
@@ -59,7 +60,7 @@ function reiniciarJogo(){
 
 function exibirMensagemInicial(){
     exibirTextoTela('h1', 'Jogo do número secreto');
-    exibirTextoTela('p', 'Escolha um número entre 1 e 10');
+    exibirTextoTela('p', 'Escolha um número entre 1 e 100');
 }
 
 //-------------------------------------------
